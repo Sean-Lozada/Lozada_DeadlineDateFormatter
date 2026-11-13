@@ -1,0 +1,18 @@
+import sys
+from datetime import datetime
+
+def formatDeadline():
+    eventTitle = input("Enter event title: ")
+    year = int(input("Enter year: "))
+    month = int(input("Enter month: "))
+    day = int(input("Enter day: "))
+    eventDate = datetime(year, month, day)
+    print("\n=== EVENT DETAILS ===")
+    print("Event Title:", eventTitle.upper())
+    print("Date:", eventDate.strftime("%B %d, %Y"))
+    print("Year:", eventDate.strftime("%Y"))
+    print("Month:", eventDate.strftime("%B"))
+    print("Day:", eventDate.day)
+    print("Weekday:", eventDate.strftime("%A"))
+
+formatDeadline()
